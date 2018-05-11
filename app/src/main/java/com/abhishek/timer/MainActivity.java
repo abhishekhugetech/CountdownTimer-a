@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     boolean hasRun = false;
@@ -61,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
         if(hasRun) {
             TextView timerTextView = findViewById(R.id.timerTextView);
             timerTextView.setTextSize(50);
-            timerTextView.setText("00:00");
+            timerTextView.setText("00:10");
+        }else{
+            Toast.makeText(MainActivity.this,"Please run a countdown once",Toast.LENGTH_SHORT).show();
         }
     }
 
