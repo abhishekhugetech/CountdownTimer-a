@@ -57,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
 
          */
     }
+    public void reset(View view){
+        if(hasRun) {
+            TextView timerTextView = findViewById(R.id.timerTextView);
+            timerTextView.setTextSize(50);
+            timerTextView.setText("00:00");
+        }
+    }
 
 
     @Override

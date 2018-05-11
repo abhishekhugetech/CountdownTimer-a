@@ -39,4 +39,13 @@
         android:textColor="@color/colorAccent"
         android:textSize="50sp" />
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        android:text="RESET TIMER" />
+
 </RelativeLayout>
